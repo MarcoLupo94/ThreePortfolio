@@ -3,20 +3,15 @@ import react from '@vitejs/plugin-react'
 const isCodeSandbox = 'SANDBOX_URL' in process.env || 'CODESANDBOX_HOST' in process.env
 
 export default {
-    plugins:
-    [
-        react()
-    ],
+    plugins: [react()],
     root: 'src/',
-    publicDir: "../public/",
+    publicDir: '../public/',
     base: './',
-    server:
-    {
+    server: {
         host: true,
         open: !isCodeSandbox // Open if it's not a CodeSandbox
     },
-    build:
-    {
+    build: {
         outDir: '../dist',
         emptyOutDir: true,
         sourcemap: true
