@@ -7,13 +7,33 @@ body,
     width: 100%;
     height: 100%;
     background: #ff9043;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    font-size: 4vw;
+    font-family: Oswald, sans-serif;
+}
+section {
+    width: 50%;
+}
+section h1 {
+    font-size: 0.8rem;
 }
 a {
     text-decoration: none;
     color: inherit;
+    font-size: 0.3rem;
 }
+
 ul {
     list-style: none;
+}
+
+h2 {
+    font-size: 0.3rem;
+}
+p {
+    font-size: 0.1rem;
 }
 .html-portfolio {
     z-index: 2;
@@ -36,4 +56,73 @@ ul {
 }
 .back-2 {
     background: linear-gradient(to right top, #fabda0, rgba(250, 189, 160, 0) 70%);
+}
+.link {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 16px 22px;
+    overflow: hidden;
+}
+.border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #fff;
+    vertical-align: baseline;
+}
+.link:hover .label-hover,
+.link:hover .inner {
+    transform: translateX(0);
+}
+
+.label-hover {
+    overflow: hidden;
+    background: #fff;
+    transform: translateX(-100%);
+}
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fdb06e;
+    transform: translateX(100%);
+}
+.label-hover,
+.inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.45s cubic-bezier(0.4, 0, 0.25, 1);
+    will-change: transform;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.list-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4em;
+    margin: 0;
+}
+.list-2 {
+    font-size: 0.5rem;
+}
+.list-2 .period {
+    background: #fff;
+    color: #ff9043;
+    padding: 0.2em;
+}
+.list-3 {
+    font-size: 3rem;
+}
+.label {
+    font-weight: 700;
+    text-transform: uppercase;
 }

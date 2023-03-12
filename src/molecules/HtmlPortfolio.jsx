@@ -1,42 +1,43 @@
-import { contacts, experiences, projects, skillsList } from './Informations'
+import { CoolLink } from '../atoms/CoolLink'
+import { contacts, experiences, projects, skillsList } from '../atoms/Informations'
 export const HtmlPortfolio = () => {
     return (
         <>
-            <span className="background back-1"></span>
-            <span className="background back-2"></span>
             <main className="html-portfolio">
                 <section className="section-intro">
-                    <h1>Marco Lupo</h1>
-                    <h2>Software Engineer</h2>
-                    <ul>
+                    <h1>MARCO LUPO</h1>
+                    <h2>SOFTWARE ENGINEER</h2>
+                    <ul className="list-1">
                         {skillsList.map(skill => (
                             <li key={skill.id}>
-                                <a target="_blank" href={skill.url}>
-                                    <b>{skill.name}</b>
-                                </a>
+                                <CoolLink
+                                    target="_blank"
+                                    routerLink={false}
+                                    link={skill.url}
+                                    text={skill.name}
+                                />
                             </li>
                         ))}
                     </ul>
                 </section>
                 <section className="section-contact">
-                    <h1>Contact</h1>
-                    <ul>
+                    <h1>CONTACT</h1>
+                    <ul className="list-1">
                         {contacts.map(contact => (
                             <li key={contact.id}>
-                                <a
+                                <CoolLink
                                     target="_blank"
-                                    href={contact.url}
-                                    className={contact.mail ? 'email' : 'social'}
-                                >
-                                    {contact.name}
-                                </a>
+                                    routerLink={false}
+                                    link={contact.url}
+                                    text={contact.name}
+                                />
                             </li>
                         ))}
                     </ul>
                 </section>
                 <section className="section-experience">
-                    <h1>Experience</h1>
-                    <ul>
+                    <h1>EXPERIENCE</h1>
+                    <ul className="list-2">
                         {experiences.map(experience => (
                             <li key={experience.id}>
                                 <h3>
@@ -44,25 +45,28 @@ export const HtmlPortfolio = () => {
                                     <span> {experience.separator} </span>
                                     {experience.name}
                                 </h3>
-                                <div className="period">
-                                    <span> {experience.start}</span>
-                                    <span> {'>'}</span>
-                                    <span> {experience.end}</span>
+                                <div>
+                                    <span className="period">{experience.start}</span>
+                                    <span> {'>'} </span>
+                                    <span className="period">{experience.end}</span>
                                 </div>
                             </li>
                         ))}
                     </ul>
                 </section>
                 <section className="section-projects">
-                    <h1>Projects</h1>
+                    <h1>PROJECTS</h1>
                     <ul>
                         {projects.map(project => (
                             <li key={project.id}>
-                                <a target="_blank" href={project.link}>
-                                    <span>{project.name}</span>
-                                </a>
-                                <p>{project.description}</p>
-                                <ul>
+                                <CoolLink
+                                    target="_blank"
+                                    routerLink={false}
+                                    link={project.url}
+                                    text={project.name}
+                                />
+                                <p style={{ fontSize: '0.4rem' }}>{project.description}</p>
+                                <ul className="list-1">
                                     {project.technologies.map(skill => (
                                         <li key={skill.id}>
                                             <a target="_blank" href={skill.url}>

@@ -1,6 +1,5 @@
-import { Center } from '@react-three/drei'
-import { Link } from 'react-router-dom'
-import Experience from './components/Experience'
+import { CoolLink } from '../atoms/CoolLink'
+import Experience from './Experience'
 
 export const NotFound = () => {
     return (
@@ -14,9 +13,12 @@ export const NotFound = () => {
             }}
         >
             <h1> 404 Page Not Found :(</h1>
-            <Link to="/" element={Experience}>
-                <h3 style={{ background: 'white', padding: '1em' }}>Back to HomePage :)</h3>
-            </Link>
+            <CoolLink
+                routerLink={true}
+                link="/"
+                element={<Experience />}
+                text={'Back To Home Page :)'}
+            />
         </div>
     )
 }

@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
-import { HtmlPortfolio } from './components/HtmlPortfolio'
-import { NotFound } from './NotFound'
-import Experience from './components/Experience'
+import { HtmlPortfolio } from './molecules/HtmlPortfolio'
+import { NotFound } from './molecules/NotFound'
+import Experience from './molecules/Experience'
 export const App = () => {
     return (
         <Routes>

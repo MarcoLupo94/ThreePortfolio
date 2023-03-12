@@ -7,6 +7,8 @@ const root = ReactDOM.createRoot(document.querySelector('#root'))
 
 root.render(
     <BrowserRouter>
+        <span className="background back-1"></span>
+        <span className="background back-2"></span>
         <App />
     </BrowserRouter>
 )
