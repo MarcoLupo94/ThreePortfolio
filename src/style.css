@@ -13,6 +13,7 @@ body,
     font-size: 4vw;
     font-family: Oswald, sans-serif;
 }
+
 section {
     width: 50%;
 }
@@ -125,4 +126,15 @@ p {
 .label {
     font-weight: 700;
     text-transform: uppercase;
+}
+/*THREE CSS  */
+canvas {
+    touch-action: none;
+}
+.htmlScreen iframe {
+    width: 1024px;
+    height: 670px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
 }
