@@ -4,7 +4,6 @@
   "authors": [
     "Renaud ROHLINGER <https://twitter.com/onirenaud>"
   ],
-   "type": "module",
   "license": "MIT",
   "private": true,
   "engines": {
