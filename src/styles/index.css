@@ -1,7 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@font-face {
+  font-family: "myfont";
+  src: url("/bangers-v20-latin-regular.woff") format('woff');
+}
 @layer base {
   * {
     box-sizing: border-box;
@@ -10,7 +13,6 @@
   html,
   body,
   #__next       {
-          /* position: fixed; */
           top: 0;
           left: 0;
           width: 100%;
@@ -18,20 +20,21 @@
           -webkit-font-smoothing: antialiased;
            color: #ffffff;
            font-family: Oswald, sans-serif;
-              font-size: calc(38px + 1vw);
+          font-size: calc(38px + 1vw);
 
 
             }
 
 body {
-    background: #0c152c;
-    line-height: 1;
+    /* background: #0c152c; */
+  background: #090D17;
+  line-height: 1;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-size-adjust: 116%;
 }
 
-section {
+.html-portfolio section {
   width: 80%;
   display: flex;
   justify-content: flex-end;
@@ -78,6 +81,8 @@ p {
   align-items: center;
 
 }
+
+
 
 .background {
   height: 100%;
@@ -214,6 +219,9 @@ canvas {
   margin: 0;
   padding: 0;
   touch-action: none;
+}
+.scene-html{
+  font-family: 'myfont';
 }
 
 .htmlScreen iframe {

@@ -11,7 +11,28 @@ const Logo = dynamic(() => import('@/components/canvas/Logo'), { ssr: false })
 
 // Dom components go here
 export default function Page(props) {
-  return <></>
+  return (
+    <>
+      <Scroll>
+        <main className='float-left '>
+          <section className='h-screen'>
+            <h1>HI THERE!</h1>
+            <h2>MY NAME IS MARCO LUPO AND I'M A SOFTWARE ENGINEER</h2>
+            <p></p>
+          </section>
+          <section className='h-screen '>
+            <h1>CONTACT</h1>
+          </section>
+          <section className='h-screen '>
+            <h1>EXPERIENCE</h1>
+          </section>
+          <section className='h-screen '>
+            <h1>PROJECTS</h1>
+          </section>
+        </main>
+      </Scroll>
+    </>
+  )
 }
 
 // Canvas components go here

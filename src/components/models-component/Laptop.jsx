@@ -13,7 +13,13 @@ export default function Laptop(props) {
         rotation={[-0.1, Math.PI, 0]}
         position={[0, 0.55, -1.15]}
       />
-      <Html transform wrapperClass='htmlScreen' distanceFactor={1.17} position={[0, 1.56, -1.4]} rotation-x={-0.256}>
+      <Html
+        occlude='blending'
+        transform
+        wrapperClass='htmlScreen'
+        distanceFactor={1.17}
+        position={[0, 1.56, -1.4]}
+        rotation-x={-0.256}>
         <iframe src='/html' />
       </Html>
     </primitive>
