@@ -8,6 +8,10 @@ const author = 'Author'
 export default function Header({ title = titleDefault }) {
   return (
     <Head>
+       <link
+            href="https://fonts.googleapis.com/css?family=Lato|Oswald:400,700&amp;display=swap"
+            rel="stylesheet"
+        />
       {/* Recommended Meta Tags */}
       <meta charSet='utf-8' />
       <meta name='language' content='english' />
@@ -25,7 +29,7 @@ export default function Header({ title = titleDefault }) {
       />
       <meta name='robots' content='index,follow' />
       <meta name='distribution' content='web' />
-      {/* 
+      {/*
       Facebook Open Graph meta tags
         documentation: https://developers.facebook.com/docs/sharing/opengraph */}
       <meta property='og:title' content={title} />
@@ -50,7 +54,7 @@ export default function Header({ title = titleDefault }) {
       <meta name='theme-color' content='#000' />
       <link rel='shortcut icon' href='/icons/favicon.ico' />
 
-      {/* 
+      {/*
       Twitter Summary card
         documentation: https://dev.twitter.com/cards/getting-started
         Be sure validate your Twitter card markup on the documentation site. */}

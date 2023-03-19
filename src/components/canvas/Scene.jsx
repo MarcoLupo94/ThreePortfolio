@@ -1,15 +1,21 @@
+import { Preload } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
-import { OrbitControls, Preload } from '@react-three/drei'
+import { Background } from '../molecules/Background'
 
 export default function Scene({ children, ...props }) {
   // Everything defined in here will persist between route changes, only children are swapped
   return (
-    <Canvas {...props}>
-      <directionalLight intensity={0.75} />
-      <ambientLight intensity={0.75} />
+    <Canvas
+      camera={{
+        fov: 45,
+        near: 0.1,
+        far: 2000,
+        position: [-3, 1.5, 4],
+      }}
+      {...props}>
+      <Background />
       {children}
       <Preload all />
-      <OrbitControls />
     </Canvas>
   )
 }

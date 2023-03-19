@@ -6,14 +6,316 @@
   * {
     box-sizing: border-box;
   }
-  
+
   html,
   body,
-  #__next {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  #__next       {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          -webkit-font-smoothing: antialiased;
+           color: #fff;
+           font-family: Oswald, sans-serif;
+              font-size: calc(38px + 1vw);
+
   }
+
+
+body {
+    background: #4f7942;line-height: 1;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 116%;
+}
+
+section {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.aligner {
+  width: 80%;
+}
+
+section h1 {
+  font-size: 0.9rem;
+  margin: 0.5em 0 0.7em 0;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.3rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 0.3rem;
+  margin: 0;
+}
+
+p {
+  font-size: 0.1rem;
+}
+
+.html-portfolio {
+  margin: 0 auto;
+  height: 100%;
+  padding-top: 1.5em;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.background {
+  height: 100%;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.back-1 {
+  background: linear-gradient(to left top, #83ca6e, rgba(252, 207, 146, 0) 50%);
+}
+
+.back-2 {
+  background: linear-gradient(to right top, #228b22, rgba(250, 189, 160, 0) 50%);
+}
+
+.v {
+  position: fixed;
+  right: 50px;
+  top: 95px;
+}
+
+.link {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 16px 22px;
+  overflow: hidden;
+}
+
+.border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 8px solid #fff;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+.link:hover .label-hover,
+.link:hover .inner {
+  transform: translateX(0);
+}
+
+.label-hover {
+  overflow: hidden;
+  background: #fff;
+  transform: translateX(-100%);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4f7942;
+  transform: translateX(100%);
+}
+
+.label-hover,
+.inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.25, 1);
+  will-change: transform;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.list-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+  margin: 0.5em 0;
+  padding: 0;
+}
+
+.list-2 {
+  font-size: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.list-2 h3 {
+  font-size: 0.4rem;
+  margin: 0em 0 1em 0;
+}
+
+.list-2 h3 span {
+  opacity: 0.5;
+}
+
+.list-2 .period {
+  background: #fff;
+  font-size: 0.35rem;
+  font-weight: 700;
+  padding: 0.3em;
+  color: #4f7942;
+}
+
+.list-3 {
+  font-size: 3rem;
+}
+
+.list-4 {
+  display: flex;
+  gap: 0.4em;
+  padding: 0;
+}
+
+.list-4 li {
+  margin-top: -0.5em;
+  margin-bottom: 0.5em;
+}
+
+.label {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/*THREE CSS  */
+canvas {
+  touch-action: none;
+}
+
+.htmlScreen iframe {
+  width: 1024px;
+  height: 670px;
+  border: none;
+  border-radius: 20px;
+  background-color: black;
+}
+
+.htmlPhoneScreen iframe {
+  width: 375px;
+  height: 812px;
+  border: none;
+  border-radius: 40px;
+  background-color: black;
+}
+
+.section-intro h1 {
+  font-size: 1.4rem;
+  margin: 0;
+  line-height: 1em;
+  width: 80%;
+}
+
+.section-intro h2 {
+  font-size: 0.5rem;
+  font-weight: 400;
+  margin: 0.1em 0;
+}
+
+.section-intro p {
+  font-size: 0.3rem;
+  width: 80%;
+  font: small-caption;
+  font-weight: 100;
+  line-height: 1.25em;
+}
+
+.section-experience {
+  text-transform: uppercase;
+}
+
+.section-projects {
+  margin-bottom: 2em;
+}
+
+@media all and (max-width: 479px) {
+  .html-portfolio {
+    padding-top: 0.5em;
+  }
+
+  section {
+    width: 85%;
+    display: block;
+  }
+
+  .aligner {
+    width: 100%;
+  }
+
+  .aligner h1 {
+    font-size: 1em;
+    margin-top: 0;
+  }
+
+  .aligner h2 {
+    font-size: 0.4em;
+  }
+
+  .aligner p {
+    font-size: 0.3em;
+  }
+
+  .list-2 {
+    gap: 2em;
+  }
+
+  .list-2 .period {
+    font-size: 0.3rem;
+  }
+
+  .list-2 div span {
+    font-size: 0.3rem;
+  }
+
+  .section-projects {
+    margin-bottom: 0.3em;
+  }
+
+  .section-contact h1,
+  .section-experience h1,
+  .section-projects h1 {
+    font-size: 0.7rem;
+  }
+
+  .section-experience .aligner {
+    margin-bottom: 0.5em;
+  }
+
+  .v {
+    transform: scale(0.8);
+    position: absolute;
+    right: 10px;
+    top: 20px;
+  }
+}
 }
