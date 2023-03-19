@@ -7,6 +7,7 @@ import { LaptopSection } from '@/components/molecules/LaptopSection'
 import { PhoneSection } from '@/components/molecules/PhoneSection'
 
 import { useThree } from '@react-three/fiber'
+import { IntroSection } from '../molecules/IntroSection'
 
 export default function MainScene({ route, ...props }) {
   const router = useRouter()
@@ -26,6 +27,7 @@ export default function MainScene({ route, ...props }) {
 
   return (
     <group ref={mesh} {...props}>
+      {/* <IntroSection /> */}
       {!isPhoneScreen ? <LaptopSection viewport={viewport} isPhoneScreen={isPhoneScreen} /> : <PhoneSection />}
     </group>
   )

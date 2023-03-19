@@ -10,7 +10,7 @@
   html,
   body,
   #__next       {
-          position: fixed;
+          /* position: fixed; */
           top: 0;
           left: 0;
           width: 100%;
@@ -20,8 +20,8 @@
            font-family: Oswald, sans-serif;
               font-size: calc(38px + 1vw);
 
-  }
 
+            }
 
 body {
     background: #0c152c;
@@ -211,6 +211,8 @@ p {
 
 /*THREE CSS  */
 canvas {
+  margin: 0;
+  padding: 0;
   touch-action: none;
 }
 
