@@ -140,7 +140,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #4f7942;
+  color: #214580;
   transform: translateX(100%);
 }
 
@@ -186,7 +186,7 @@ p {
   font-size: 0.35rem;
   font-weight: 700;
   padding: 0.3em;
-  color: #4f7942;
+  color: #214580;
 }
 
 .list-3 {
