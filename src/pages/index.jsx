@@ -18,5 +18,5 @@ export default function Page(props) {
 Page.canvas = (props) => <MainScene route='/blob' />
 
 export async function getStaticProps() {
-  return { props: { title: 'Index' } }
+  return { props: { title: 'MARCO LUPO' } }
 }
