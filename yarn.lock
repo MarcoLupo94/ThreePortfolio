@@ -1203,16 +1203,16 @@
   resolved "https://registry.npmjs.org/@react-spring/types/-/types-9.6.1.tgz"
   integrity sha512-POu8Mk0hIU3lRXB3bGIGe4VHIwwDsQyoD1F394OK7STTiX9w4dG3cTLljjYswkQN+hDSHRrj4O36kuVa7KPU8Q==
 
-"@react-three/drei@^9.56.5":
-  version "9.56.27"
-  resolved "https://registry.npmjs.org/@react-three/drei/-/drei-9.56.27.tgz"
-  integrity sha512-NnhzBOagyd/PDWTo/BGu315e9ubUjvbeIKjJwkDBtjOnv4SpUsvAm0H9yxLSHBOXQ24Mik3Y3zETBd0+dHD5Ew==
+"@react-three/drei@^9.57.3":
+  version "9.57.3"
+  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.57.3.tgz#86410c55279bb402845af10f18cd6736c7d1f98d"
+  integrity sha512-zkkrIrd3kuKkRlT0IUg6y8dBppZiv2KXrS6IzUIOKAAwbsNAotAQT//0u6Z242q0WdSfxiQgPFi3WApKpbENPw==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@react-spring/three" "~9.6.1"
     "@use-gesture/react" "^10.2.24"
-    camera-controls "^2.1.0"
-    detect-gpu "^5.0.10"
+    camera-controls "^2.3.1"
+    detect-gpu "^5.0.14"
     glsl-noise "^0.0.0"
     lodash.clamp "^4.0.3"
     lodash.omit "^4.5.0"
@@ -1781,10 +1781,10 @@ camelcase-css@^2.0.1:
   resolved "https://registry.npmjs.org/camelcase-css/-/camelcase-css-2.0.1.tgz"
   integrity sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==
 
-camera-controls@^2.1.0:
-  version "2.3.1"
-  resolved "https://registry.npmjs.org/camera-controls/-/camera-controls-2.3.1.tgz"
-  integrity sha512-mGPDOqCTSUqaeX3yR3bWQ/p1M5CR8C+cnqndBxQugfGKysn1dhRtw8Q6sG1hq4GL8RPsGwRanwQk5zwQjyrxyQ==
+camera-controls@^2.3.1:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/camera-controls/-/camera-controls-2.3.3.tgz#45276a21d743a0e5d2ecdf1b23364228570ed66f"
+  integrity sha512-7OhbH0FyzpZtNKpxU9+NFMz9OeaQFWLVgrzotvpDnCCnAjaKhU8InTJZ9sMzfLYzfUbwBJ/ee6jXvWYwvgjuFA==
 
 caniuse-lite@^1.0.30001406, caniuse-lite@^1.0.30001426, caniuse-lite@^1.0.30001449:
   version "1.0.30001458"
@@ -2035,10 +2035,10 @@ del@^4.1.1:
     pify "^4.0.1"
     rimraf "^2.6.3"
 
-detect-gpu@^5.0.10:
-  version "5.0.13"
-  resolved "https://registry.npmjs.org/detect-gpu/-/detect-gpu-5.0.13.tgz"
-  integrity sha512-IsQRA69imfta1BdFFIgOspwQn5z/CLMzREpXwxP6F0hniMr7dlamBUSFdOSEnsIUpfL8lrY1NenK2Zxal54qbw==
+detect-gpu@^5.0.14:
+  version "5.0.16"
+  resolved "https://registry.yarnpkg.com/detect-gpu/-/detect-gpu-5.0.16.tgz#a42054724f4a75d667add68ad1073c80d29ef733"
+  integrity sha512-6+o6Sy+FzgQJG7Ray0fN7B4kRGGPuyaM5FHXJ4N3sLcQhsUO9+NEw9emM7vxN7DroZGG16ZydCX6kpgDmNXyKQ==
   dependencies:
     webgl-constants "^1.1.1"
 

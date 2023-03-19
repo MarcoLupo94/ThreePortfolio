@@ -2,6 +2,7 @@ import { ContactShadows, Float, Html, PresentationControls, Text } from '@react-
 import { useThree } from '@react-three/fiber'
 import { useState } from 'react'
 import { zoomOffLaptop, zoomOnLaptop } from '../animations/cameraAnimation'
+import { CoolLink } from '../atoms/CoolLink'
 import { DelayLink } from '../atoms/DelayLink'
 import Laptop from '../models-component/Laptop'
 export const LaptopSection = ({ isPhoneScreen, viewport }) => {
@@ -40,6 +41,9 @@ export const LaptopSection = ({ isPhoneScreen, viewport }) => {
             rotation-y={-1.25}>
             WELCOME VISITOR!
           </Text>
+          <Html position={[2, -1.75, 0.75]}>
+            <CoolLink text={'HTML Version'} link='html' />
+          </Html>
         </Float>
       </PresentationControls>
 
