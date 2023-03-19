@@ -29,15 +29,15 @@ export const LaptopSection = ({ isPhoneScreen, viewport }) => {
         config={{ mass: 2, tension: 400 }}
         snap={{ mass: 4, tension: 400 }}>
         <Float rotationIntensity={zoomedIn ? 0 : 0.4} floatIntensity={zoomedIn ? 0 : 0.4}>
-          <Laptop scale={1} position-x={0} position-y={-3} />
-          <Html position-x={1} position-y={-2.4} position-z={-1}>
+          <Laptop scale={1} position-x={0} position-y={-1.25} />
+          <Html position-x={1} position-y={-0.7} position-z={-1}>
             <DelayLink delay={1000} text={'Zoom'} zoomIn={zoomIn} />
           </Html>
           <Text
             font='./bangers-v20-latin-regular.woff'
             maxWidth={2}
             fontSize={0.7}
-            position={[2, -0.75, 0.75]}
+            position={[2, 0.5, 0.75]}
             rotation-y={-1.25}>
             WELCOME VISITOR!
           </Text>

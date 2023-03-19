@@ -16,7 +16,7 @@ export default function Scene({ children, ...props }) {
       <Background />
       {children}
       <Preload all />
-      <ScrollTicker />
+      {/* <ScrollTicker /> */}
     </Canvas>
   )
 }

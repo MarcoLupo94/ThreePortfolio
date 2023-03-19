@@ -11,7 +11,7 @@ const Logo = dynamic(() => import('@/components/canvas/Logo'), { ssr: false })
 
 // Dom components go here
 export default function Page(props) {
-  return <Scroll></Scroll>
+  return <></>
 }
 
 // Canvas components go here
