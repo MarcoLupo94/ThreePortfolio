@@ -1,10 +1,7 @@
 import { CoolLink } from '../components/atoms/CoolLink'
 import { contacts, experiences, projects } from '../components/atoms/Informations'
-import { useRouter } from 'next/router'
 
 export default function html() {
-  const router = useRouter()
-  console.log(router.pathname)
   return (
     <>
       <span className='background back-1'></span>
