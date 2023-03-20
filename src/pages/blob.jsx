@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic'
-import Instructions from '@/components/dom/Instructions'
+import Instructions from '@/components/dom/HtmlLayout'
 
 const Blob = dynamic(() => import('@/components/canvas/Blob'), { ssr: false })
 

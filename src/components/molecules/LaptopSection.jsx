@@ -21,8 +21,9 @@ export const LaptopSection = ({ isPhoneScreen, viewport }) => {
   }
 
   return (
-    <group position-y={-4.2}>
+    <group position-y={-16.8}>
       <PresentationControls
+        makeDefault
         rotation={[0.13, 0.1, 0]}
         azimuth={[-1, 0.75]}
         polar={[-0.4, 0.2]}
@@ -41,9 +42,6 @@ export const LaptopSection = ({ isPhoneScreen, viewport }) => {
             rotation-y={-1.25}>
             WELCOME VISITOR!
           </Text>
-          <Html position={[2, -1.75, 0.75]}>
-            <CoolLink text={'HTML Version'} link='html' />
-          </Html>
         </Float>
       </PresentationControls>
 

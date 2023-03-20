@@ -79,6 +79,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0.7em;
 
 }
 
@@ -220,8 +221,9 @@ canvas {
   padding: 0;
   touch-action: none;
 }
-.scene-html{
+.scene-html *{
   font-family: 'myfont';
+    letter-spacing: 0.3px;
 }
 
 .htmlScreen iframe {
@@ -268,8 +270,13 @@ canvas {
 .section-projects {
   margin-bottom: 2em;
 }
-
-@media all and (max-width: 479px) {
+.section-projects li{
+  margin-bottom: 0.3em;
+  }
+    .section-projects li p{
+      margin: 1em 0;
+    }
+  @media all and (max-width: 479px) {
   .html-portfolio {
     padding-top: 0.5em;
   }

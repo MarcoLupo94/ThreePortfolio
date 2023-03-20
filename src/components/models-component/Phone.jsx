@@ -1,4 +1,6 @@
-import { Html, useGLTF } from '@react-three/drei'
+import { Html, useGLTF, useScroll } from '@react-three/drei'
+import gsap from 'gsap'
+import { useEffect, useRef } from 'react'
 export default function Phone(props) {
   const { scene } = useGLTF(
     'https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/iphone-x/model.gltf',
