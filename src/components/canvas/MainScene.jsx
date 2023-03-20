@@ -12,7 +12,7 @@ export default function MainScene({ route, ...props }) {
 
   return (
     <group ref={mesh} {...props}>
-      {/* <IntroSection /> */}
+      <IntroSection />
       {!isPhoneScreen ? <LaptopSection viewport={viewport} isPhoneScreen={isPhoneScreen} /> : <PhoneSection />}
     </group>
   )

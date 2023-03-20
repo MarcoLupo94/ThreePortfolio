@@ -40,7 +40,7 @@ export const LaptopSection = ({ isPhoneScreen, viewport }) => {
             fontSize={0.7}
             position={[2, -0.75, 0.75]}
             rotation-y={-1.25}>
-            WELCOME VISITOR!
+            MY PROJECTS
           </Text>
         </Float>
       </PresentationControls>
