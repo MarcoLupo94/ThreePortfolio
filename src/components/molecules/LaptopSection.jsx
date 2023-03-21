@@ -2,7 +2,6 @@ import { ContactShadows, Float, Html, PresentationControls, Text } from '@react-
 import { useThree } from '@react-three/fiber'
 import { useState } from 'react'
 import { zoomOffLaptop, zoomOnLaptop } from '../animations/cameraAnimation'
-import { CoolLink } from '../atoms/CoolLink'
 import { DelayLink } from '../atoms/DelayLink'
 import Laptop from '../models-component/Laptop'
 export const LaptopSection = ({ isPhoneScreen, viewport }) => {

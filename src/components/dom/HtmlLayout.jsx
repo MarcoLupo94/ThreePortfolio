@@ -1,6 +1,9 @@
 import { CoolLink } from '../atoms/CoolLink'
 import { contacts } from '../atoms/Informations'
+import { useContext } from 'react'
+import { ScrollContext } from '@/templates/hooks/context'
 export default function HtmlLayout({ children }) {
+  const { scroll } = useContext(ScrollContext)
   return (
     <main className='scene-html ml-20 flex w-40  flex-col'>
       <section className='flex h-screen flex-col items-start justify-center gap-1 '>

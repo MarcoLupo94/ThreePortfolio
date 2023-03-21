@@ -1,7 +1,7 @@
+import { Text } from '@react-three/drei'
+import { useFrame } from '@react-three/fiber'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import * as THREE from 'three'
-import { useRef, useState, useMemo, useEffect } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
-import { Text, TrackballControls } from '@react-three/drei'
 import { skillsList } from '../atoms/Informations'
 
 function Word({ children, ...props }) {

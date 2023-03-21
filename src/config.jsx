@@ -8,10 +8,6 @@ const author = 'Author'
 export default function Header({ title = titleDefault }) {
   return (
     <Head>
-       <link
-            href="https://fonts.googleapis.com/css?family=Lato|Oswald:400,700&amp;display=swap"
-            rel="stylesheet"
-        />
       {/* Recommended Meta Tags */}
       <meta charSet='utf-8' />
       <meta name='language' content='english' />
@@ -46,7 +42,8 @@ export default function Header({ title = titleDefault }) {
       <link rel='manifest' href='/manifest.json' />
       <link rel='mask-icon' color='#000000' href='/icons/safari-pinned-tab.svg' />
       <link rel='apple-touch-startup-image' href='/startup.png' />
-
+      {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+      <link href='https://fonts.googleapis.com/css?family=Lato|Oswald:400,700&amp;display=swap' rel='stylesheet' />
       {/* Meta Tags for HTML pages on Mobile */}
       {/* <meta name="format-detection" content="telephone=yes"/>
         <meta name="HandheldFriendly" content="true"/>  */}
