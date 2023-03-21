@@ -1,8 +1,8 @@
 import { Float, PresentationControls } from '@react-three/drei'
 import Guitar from '../models-component/Guitar'
-export const IntroSection = ({ isPhoneScreen, viewport }) => {
+export const IntroSection = ({ isPhoneScreen, viewport, ...props }) => {
   return (
-    <group position={[0, -0.5, 1.63]} rotation={[-0.5, -1.5, -0.3]}>
+    <group position={[0, -0.5, 1.63]} rotation={[-0.5, -1.5, -0.3]} {...props}>
       <PresentationControls
         makeDefault
         azimuth={[-1, 0.75]}

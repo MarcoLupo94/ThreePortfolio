@@ -20,7 +20,7 @@ export const LaptopSection = ({ isPhoneScreen, viewport }) => {
   }
 
   return (
-    <group position-y={-16.8}>
+    <group position-y={-1.8}>
       <PresentationControls
         makeDefault
         rotation={[0.13, 0.1, 0]}

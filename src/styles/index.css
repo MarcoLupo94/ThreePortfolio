@@ -337,3 +337,19 @@ canvas {
   }
 }
 }
+.scroll {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  overflow: hidden;
+    position: absolute;
+      top: 0;
+      left: 0;
+      overflow-y: auto;
+      scroll-snap-type: y proximity;
+}
+.scroll>main {
+  scroll-snap-align: start;
+}

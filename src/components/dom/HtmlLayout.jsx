@@ -3,9 +3,13 @@ import { contacts } from '../atoms/Informations'
 import { useContext } from 'react'
 import { ScrollContext } from '@/templates/hooks/context'
 export default function HtmlLayout({ children }) {
-  const { scroll } = useContext(ScrollContext)
+  const { scroll, overlay, caption } = useContext(ScrollContext)
+  const handleScroll = (e) => {
+    scroll.current = e.target.scrollTop / (e.target.scrollHeight - window.innerHeight)
+    // caption.current.innerText = scroll.current.toFixed(2)
+  }
   return (
-    <main className='scene-html ml-20 flex w-40  flex-col'>
+    <main ref={overlay} onScroll={handleScroll} className='scene-html scroll ml-20  w-40  flex-col '>
       <section className='flex h-screen flex-col items-start justify-center gap-1 '>
         <h1 className='m-0 text-xl  '>HI THERE!</h1>
         <p className='text-xs'>MY NAME IS MARCO LUPO AND I'M A SOFTWARE ENGINEER</p>
@@ -23,7 +27,10 @@ export default function HtmlLayout({ children }) {
       <section className='flex h-screen flex-col items-start justify-center gap-1 '>
         <h1 className='m-0 text-xl'>EXPERIENCE</h1>
       </section>
-      <section className='flex h-screen flex-col items-start justify-center gap-1 '></section>
+      <section className='flex h-screen flex-col items-start justify-center gap-1 '>
+        {' '}
+        <h1 className='m-0 text-xl'>Projects</h1>
+      </section>
     </main>
   )
 }
