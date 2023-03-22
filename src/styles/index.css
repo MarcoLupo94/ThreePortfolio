@@ -347,18 +347,27 @@ canvas {
     position: absolute;
       top: 0;
       left: 0;
-      overflow-y: auto;
+      overflow-y: scroll;
       scroll-snap-type: y proximity;
 }
-.scroll>main {
+.scroll>section {
   scroll-snap-align: start;
+
 }
 .dot {
-  pointer-events: none;
-  position: sticky;
+   position: sticky;
   top: 0px;
   max-width: 600px;
   padding: 0;
   padding: 80px;
+
+}
+
+.caption {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 80px;
 
 }

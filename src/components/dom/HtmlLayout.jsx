@@ -6,10 +6,10 @@ export default function HtmlLayout({ children }) {
   const { scroll, overlay, caption } = useContext(ScrollContext)
   const handleScroll = (e) => {
     scroll.current = e.target.scrollTop / (e.target.scrollHeight - window.innerHeight)
-    // caption.current.innerText = scroll.current.toFixed(2)
+    caption.current.innerText = scroll.current.toFixed(2)
   }
   return (
-    <main ref={overlay} onScroll={handleScroll} className='scene-html scroll ml-20  w-40 '>
+    <main ref={overlay} onScroll={handleScroll} className='scroll scene-html ml-20  w-40 '>
       <section className=' h-screen' style={{ height: '200vh' }}>
         <div className='dot'>
           <h1 className='m-0 text-xl  '>HI THERE!</h1>
@@ -38,6 +38,9 @@ export default function HtmlLayout({ children }) {
           <h1 className='m-0 text-xl'>PROJECTS</h1>
         </div>
       </section>
+      <span ref={caption} class='caption'>
+        {scroll.current}
+      </span>
     </main>
   )
 }
