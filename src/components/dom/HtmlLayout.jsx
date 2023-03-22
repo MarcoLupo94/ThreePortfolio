@@ -9,27 +9,34 @@ export default function HtmlLayout({ children }) {
     // caption.current.innerText = scroll.current.toFixed(2)
   }
   return (
-    <main ref={overlay} onScroll={handleScroll} className='scene-html scroll ml-20  w-40  flex-col '>
-      <section className='flex h-screen flex-col items-start justify-center gap-1 '>
-        <h1 className='m-0 text-xl  '>HI THERE!</h1>
-        <p className='text-xs'>MY NAME IS MARCO LUPO AND I'M A SOFTWARE ENGINEER</p>
+    <main ref={overlay} onScroll={handleScroll} className='scene-html scroll ml-20  w-40 '>
+      <section className=' h-screen' style={{ height: '200vh' }}>
+        <div className='dot'>
+          <h1 className='m-0 text-xl  '>HI THERE!</h1>
+          <p className='text-xs'>MY NAME IS MARCO LUPO AND I'M A SOFTWARE ENGINEER</p>
+        </div>
       </section>
-      <section className='flex h-screen flex-col items-start justify-center gap-1 '>
-        <h1 className='m-0 text-xl'>CONTACT ME</h1>
-        <ul className='list-1'>
-          {contacts.map((contact) => (
-            <li key={contact.id}>
-              <CoolLink target='_blank' routerLink={false} link={contact.url} text={contact.name} />
-            </li>
-          ))}
-        </ul>
+      <section className=' h-screen  ' style={{ height: '200vh' }}>
+        <div className='dot'>
+          <h1 className='m-0 text-xl'>CONTACT ME</h1>
+          <ul className='list-1'>
+            {contacts.map((contact) => (
+              <li key={contact.id}>
+                <CoolLink target='_blank' routerLink={false} link={contact.url} text={contact.name} />
+              </li>
+            ))}
+          </ul>
+        </div>
       </section>
-      <section className='flex h-screen flex-col items-start justify-center gap-1 '>
-        <h1 className='m-0 text-xl'>EXPERIENCE</h1>
+      <section className=' h-screen  ' style={{ height: '200vh' }}>
+        <div className='dot'>
+          <h1 className='m-0 text-xl'>EXPERIENCE</h1>
+        </div>
       </section>
-      <section className='flex h-screen flex-col items-start justify-center gap-1 '>
-        {' '}
-        <h1 className='m-0 text-xl'>Projects</h1>
+      <section className=' h-screen' style={{ height: '200vh' }}>
+        <div className='dot'>
+          <h1 className='m-0 text-xl'>PROJECTS</h1>
+        </div>
       </section>
     </main>
   )

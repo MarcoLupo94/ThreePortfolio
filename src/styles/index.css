@@ -353,3 +353,12 @@ canvas {
 .scroll>main {
   scroll-snap-align: start;
 }
+.dot {
+  pointer-events: none;
+  position: sticky;
+  top: 0px;
+  max-width: 600px;
+  padding: 0;
+  padding: 80px;
+
+}

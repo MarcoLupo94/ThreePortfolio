@@ -33,19 +33,19 @@ export default function MainScene({ route, ...props }) {
     //   0.05,
     // )
     camera.position.y = scroll.current * -5
-    group.current.children[0].children.forEach((child, index) => {
-      // child.material.color.lerp(color.set(hovered === child.name ? 'tomato' : '#202020'), hovered ? 0.1 : 0.05)
-      const et = state.clock.elapsedTime
-      // child.position.y = Math.sin((et + index * 2000) / 2) * 1
-      child.rotation.x = Math.sin((et + index * 2000) / 3) / 10
-      child.rotation.y = Math.cos((et + index * 2000) / 2) / 10
-      child.rotation.z = Math.sin((et + index * 2000) / 3) / 10
-    })
+    // group.current.children[0].children.forEach((child, index) => {
+    // child.material.color.lerp(color.set(hovered === child.name ? 'tomato' : '#202020'), hovered ? 0.1 : 0.05)
+    // const et = state.clock.elapsedTime
+    // child.position.y = Math.sin((et + index * 2000) / 2) * 1
+    // child.rotation.x = Math.sin((et + index * 2000) / 3) / 10
+    // child.rotation.y = Math.cos((et + index * 2000) / 2) / 10
+    // child.rotation.z = Math.sin((et + index * 2000) / 3) / 10
+    // })
   })
   return (
     <group ref={(mesh, group)} {...props}>
-      <IntroSection />
-      {!isPhoneScreen ? <LaptopSection viewport={viewport} isPhoneScreen={isPhoneScreen} /> : <PhoneSection />}
+      {/* <IntroSection /> */}
+      {/* {!isPhoneScreen ? <LaptopSection viewport={viewport} isPhoneScreen={isPhoneScreen} /> : <PhoneSection />} */}
     </group>
   )
 }
