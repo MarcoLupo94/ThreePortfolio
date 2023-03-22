@@ -9,7 +9,8 @@ const Layout = forwardRef(({ children, ...props }, ref) => {
     <div
       {...props}
       ref={localRef}
-      className='absolute top-0 left-0 z-10 h-screen w-screen overflow-hidden  text-gray-50'>
+      className='absolute top-0 left-0 z-10 h-screen w-screen overflow-hidden  text-gray-50'
+    >
       {children}
     </div>
   )

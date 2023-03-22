@@ -1,14 +1,10 @@
-import { LaptopSection } from '@/components/molecules/LaptopSection'
-import { PhoneSection } from '@/components/molecules/PhoneSection'
 import { useContext, useMemo, useRef } from 'react'
-
+import LaptopSection from '../molecules/LaptopSection'
 import { ScrollContext } from '@/templates/hooks/context'
-import { useAnimations, useGLTF } from '@react-three/drei'
 import { useFrame, useThree } from '@react-three/fiber'
 import { useEffect, useState } from 'react'
 import * as THREE from 'three'
-import { IntroSection } from '../molecules/IntroSection'
-
+import Effects from '../molecules/Effects'
 const color = new THREE.Color()
 export default function MainScene({ route, ...props }) {
   const mesh = useRef(null)
@@ -19,13 +15,13 @@ export default function MainScene({ route, ...props }) {
   const { camera } = useThree()
   // const { nodes, materials, animations } = useGLTF('/model.glb')
   // const { actions } = useAnimations(animations, group)
-  const [hovered, set] = useState()
-  const extras = { receiveShadow: true, castShadow: true, 'material-envMapIntensity': 0.2 }
+  // const [hovered, set] = useState()
+  // const extras = { receiveShadow: true, castShadow: true, 'material-envMapIntensity': 0.2 }
   // useEffect(() => void (actions['CameraAction.005'].play().paused = true), [])
-  useEffect(() => {
-    if (hovered) group.current.getObjectByName(hovered).material.color.set('white')
-    document.body.style.cursor = hovered ? 'pointer' : 'auto'
-  }, [hovered])
+  // useEffect(() => {
+  //   if (hovered) group.current.getObjectByName(hovered).material.color.set('white')
+  //   document.body.style.cursor = hovered ? 'pointer' : 'auto'
+  // }, [hovered])
   useFrame((state) => {
     // actions['CameraAction.005'].time = THREE.MathUtils.lerp(
     //   actions['CameraAction.005'].time,
@@ -44,8 +40,8 @@ export default function MainScene({ route, ...props }) {
   })
   return (
     <group ref={(mesh, group)} {...props}>
-      {/* <IntroSection /> */}
-      {/* {!isPhoneScreen ? <LaptopSection viewport={viewport} isPhoneScreen={isPhoneScreen} /> : <PhoneSection />} */}
+      {/* <Effects /> */}
+      <LaptopSection viewport={viewport} />
     </group>
   )
 }

@@ -13,7 +13,7 @@ export default function HtmlLayout({ children }) {
       <section className=' h-screen' style={{ height: '200vh' }}>
         <div className='dot'>
           <h1 className='m-0 text-xl  '>HI THERE!</h1>
-          <p className='text-xs'>MY NAME IS MARCO LUPO AND I'M A SOFTWARE ENGINEER</p>
+          <p className='text-xs'>MY NAME IS MARCO LUPO AND I AM A SOFTWARE ENGINEER</p>
         </div>
       </section>
       <section className=' h-screen  ' style={{ height: '200vh' }}>
@@ -38,7 +38,7 @@ export default function HtmlLayout({ children }) {
           <h1 className='m-0 text-xl'>PROJECTS</h1>
         </div>
       </section>
-      <span ref={caption} class='caption'>
+      <span ref={caption} className='caption'>
         {scroll.current}
       </span>
     </main>

@@ -26,7 +26,7 @@ export default function Particles({ count, mouse }) {
   // The innards of this hook will run every frame
   useFrame((state) => {
     // Makes the light follow the mouse
-    light.current.position.set(state.mouse.x * 50, state.mouse.y * 50, -5)
+    // light.current.position.set(state.mouse.x * 20, -state.mouse.y * 20)
     // Run through the randomized data to calculate some movement
     particles.forEach((particle, i) => {
       let { t, factor, speed, xFactor, yFactor, zFactor } = particle
@@ -35,8 +35,8 @@ export default function Particles({ count, mouse }) {
       const a = Math.cos(t) + Math.sin(t * 1) / 10
       const b = Math.sin(t) + Math.cos(t * 2) / 10
       const s = Math.cos(t)
-      particle.mx += (mouse.current[0] - particle.mx) * 0.01
-      particle.my += (mouse.current[1] * -1 - particle.my) * 0.01
+      particle.mx += (state.mouse.x - particle.mx) * 0.01
+      particle.my += (state.mouse.y * -1 - particle.my) * 0.01
       // Update the dummy object
       dummy.position.set(
         (particle.mx / 10) * a + xFactor + Math.cos((t / 10) * factor) + (Math.sin(t * 1) * factor) / 10,
@@ -53,7 +53,7 @@ export default function Particles({ count, mouse }) {
   })
   return (
     <group>
-      <pointLight ref={light} distance={100} intensity={20} color='lightblue' />
+      <pointLight ref={light} distance={200} intensity={40} color='lightblue' position={[-3, -1.5, -100]} />
       <instancedMesh ref={mesh} args={[null, null, count]}>
         <dodecahedronGeometry args={[0.2, 0]} />
         <meshPhongMaterial color='#050505' />

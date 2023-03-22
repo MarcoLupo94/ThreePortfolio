@@ -20,7 +20,9 @@
     "start": "next start"
   },
   "dependencies": {
-    "@react-three/drei": "^9.57.3",
+    "@react-spring/three": "^9.5.2",
+    "@react-spring/web": "^9.5.2",
+    "@react-three/drei": "^9.58.2",
     "@react-three/fiber": "^8.10.1",
     "@studio-freight/lenis": "^1.0.1",
     "glsl-random": "^0.0.5",

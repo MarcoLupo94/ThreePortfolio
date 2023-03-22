@@ -23,7 +23,8 @@ export default function App({ Component, pageProps = { title: 'index' } }) {
               className='pointer-events-none left-0 top-0 -z-10'
               style={{ position: 'absolute', overflowY: 'scroll' }}
               eventSource={ref}
-              eventPrefix='client'>
+              eventPrefix='client'
+            >
               {Component.canvas(pageProps)}
             </Scene>
           )}

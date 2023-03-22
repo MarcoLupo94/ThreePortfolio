@@ -34,9 +34,10 @@ function Word({ children, ...props }) {
       ref={ref}
       onPointerOver={over}
       onPointerOut={out}
-      onClick={() => console.log('clicked')}
+      // onClick={() => console.log('clicked')}
       {...props}
-      {...fontProps}>
+      {...fontProps}
+    >
       {children}
     </Text>
   )

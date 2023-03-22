@@ -12,7 +12,8 @@ export default function Scene({ children, ...props }) {
         far: 2000,
         position: [-3, 1.5, 4],
       }}
-      {...props}>
+      {...props}
+    >
       <Background />
       {children}
       <Preload all />
